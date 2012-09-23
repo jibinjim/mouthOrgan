@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/organ"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/flip" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="55dp"
+        android:layout_height="85dp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="@drawable/about"
+        android:onClick="about" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="55dp"
+        android:layout_height="85dp"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/home"
+        android:onClick="home_view" />
+
+</RelativeLayout>
